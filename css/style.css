@@ -1,0 +1,163 @@
+/* ===============================
+   EDUCATIONAL LIGHT PROFESSIONAL THEME
+   =============================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Roboto',sans-serif;
+  background:#f0f8ff; /* light educational vibe */
+  color:#1f2937;
+  line-height:1.7;
+}
+
+/* Container */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 25px;
+}
+
+/* Navbar */
+.navbar{
+  background:#2563eb; /* bright blue educational color */
+  padding:15px 0;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.navbar-brand{
+  color:white;
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.nav-link:hover{
+  color:#ffd700; /* yellow highlight */
+}
+
+/* Hero Section */
+.hero{
+  background:linear-gradient(135deg,#60a5fa,#93c5fd,#bfdbfe); 
+  color:#1f2937;
+  text-align:center;
+  padding:100px 20px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero h1{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:15px;
+  color:#1e3a8a;
+}
+
+.hero p{
+  font-size:20px;
+  opacity:0.9;
+}
+
+/* Cards */
+.card{
+  background:white;
+  border-radius:15px;
+  border:none;
+  padding:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:all 0.3s ease;
+  margin-bottom:30px; /* big gap between cards */
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(37,99,235,0.2);
+}
+
+/* Buttons */
+.btn{
+  border-radius:30px;
+  padding:12px 28px;
+  font-weight:600;
+  font-size:14px;
+  background:linear-gradient(135deg,#2563eb,#60a5fa);
+  border:none;
+  color:white;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 25px rgba(37,99,235,0.3);
+}
+
+/* Demo Box */
+.demo-box{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  margin-top:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Code Box */
+.code-box{
+  background:#f1f5f9;
+  color:#1f2937;
+  padding:20px;
+  border-radius:12px;
+  font-family:monospace;
+  font-size:14px;
+  margin-top:20px;
+  overflow-x:auto;
+  border:1px solid #cbd5e1;
+}
+
+/* Headings */
+h1,h2,h3{
+  font-weight:700;
+  margin-bottom:15px;
+  color:#1f2937;
+}
+
+/* Footer */
+footer{
+  background:#2563eb;
+  color:white;
+  text-align:center;
+  padding:30px;
+  margin-top:60px;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1{
+    font-size:36px;
+  }
+  .hero p{
+    font-size:16px;
+  }
+  .container{
+    padding:40px 20px;
+  }
+}

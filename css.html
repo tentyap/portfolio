@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Demonstration</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f0f8ff; /* light educational vibe */
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 25px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #60a5fa, #93c5fd, #bfdbfe);
+      color: #1f2937;
+      text-align: center;
+      padding: 100px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #1e3a8a;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Cards / Content Sections */
+    .card {
+      background: white;
+      border-radius: 15px;
+      border: none;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(37,99,235,0.2);
+    }
+
+    /* Buttons */
+    .btn {
+      border-radius: 30px;
+      padding: 12px 28px;
+      font-weight: 600;
+      font-size: 14px;
+      background: linear-gradient(135deg, #2563eb, #60a5fa);
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(37,99,235,0.3);
+    }
+
+    /* Demo Box */
+    .demo-box {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      font-size: 1.1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    /* Headings */
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #1f2937;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #1e40af;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      .container {
+        padding: 40px 20px;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="hero">
+      <h1>CSS Demonstration</h1>
+      <p>CSS stands for Cascading Style Sheets and is used to style HTML elements. Explore modern, clean, and professional styling techniques below.</p>
+    </div>
+
+    <div class="card">
+      <h2>Styled Box Example</h2>
+      <div class="demo-box">
+        This box is styled using CSS.
+      </div>
+      <p style="margin-top: 20px;">
+        Hover over the box above to see the smooth lift and shadow enhancement effect.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Button Styling</h2>
+      <button class="btn">Styled Button</button>
+      <p style="margin-top: 20px;">
+        CSS controls layout, colors, spacing, fonts, transitions, and interactive effects.
+      </p>
+    </div>
+
+    <a href="index.html" class="btn">Back to Home</a>
+
+  </div>
+
+</body>
+</html>
